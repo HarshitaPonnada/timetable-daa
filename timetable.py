@@ -62,7 +62,7 @@ st.title("📅 Custom Timetable Generator")
 # Get basic input
 num_classes = st.number_input("Number of Classes", min_value=1, max_value=10, value=2)
 periods_per_day = st.slider("Periods per Day", 1, 10, 6)
-rooms = st.multiselect("Select Available Rooms", ["R1", "R2", "R3", "R4"], default=["R1", "R2"])
+rooms = st.multiselect("Select Available Rooms", ["B5-401", "B5-402", "B5-403", "B4-402"], default=["B4-402"])
 days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 time_slots = [(d, p) for d in range(len(days)) for p in range(periods_per_day)]
 
